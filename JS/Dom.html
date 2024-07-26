@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <ol>
+        <li id="backend">Java</li>
+        <li id="backend2"><b>Python</b></li>
+        <li>C#</li>
+        <li class="frontend">HTML</li>
+        <li class="frontend">CSS</li>
+
+        <p id="para">
+
+        </p>
+
+        <p id="para2">
+
+        </p>
+    </ol>
+
+    <script>
+        const liNodes=document.getElementsByTagName("li")
+        console.log(liNodes);
+
+        const liNodes2=document.getElementsByClassName("frontend")
+        console.log(liNodes2);
+
+        const liNode=document.getElementById("backend")
+        console.log(liNode);
+        console.log(liNode.textContent) //plain text
+
+        const liNode2=document.getElementById("backend2")
+        console.log(liNode2.textContent);//Python
+        console.log(liNode2.innerHTML);//<b>Python</b>
+        console.log(liNode2.innerText);//Python
+
+        const pNode= document.getElementById("para")
+        pNode.innerHTML=liNode2.innerHTML
+
+        document.getElementById("para2").innerHTML="<i>"+liNode2.innerHTML+"</i>"
+
+
+        const text= document.createTextNode("India is my country")
+        const bnode=document.createElement("b")
+        bnode.append(text)
+        document.body.append(bnode)
+
+        // let p1=document.getElementById("para2")
+        // p1.appendChild(text)
+
+
+
+        
+
+    </script>
+</body>
+</html>
