@@ -7,3 +7,6 @@ body{
 header{
     border: 4px double black;
 }
+footer p{
+    background-color: teal;
+}
