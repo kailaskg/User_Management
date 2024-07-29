@@ -4,3 +4,6 @@ body{
 #h4{
     color: darkgreen;
 }
+header{
+    border: 4px double black;
+}
